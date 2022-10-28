@@ -1,0 +1,137 @@
+*{ 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+} 
+ 
+html{ 
+    scroll-behavior: smooth; 
+} 
+ 
+body{ 
+    font-family:'fira code',sans-serif; 
+    background:#16ac91 ;
+    color: #141414; 
+} 
+p{font-size: 1.3em;} 
+ 
+.container{ 
+    width: 100%; 
+    max-width: 1400px; 
+    display: flex; 
+    justify-content: inherit; 
+    margin: 0 auto; 
+    padding: 0 10px; 
+} 
+
+section{ 
+    text-align: center; 
+    padding: 90px 0; 
+
+} 
+/* -------------------Desde aca es el header------------------*/ 
+header{ 
+    background: linear-gradient(rgba(5,7,12,0.65),rgba(5,7,12,0.65));/*el degradado ensima de la imagen*/
+    position: fixed; 
+    display: flex; 
+    transition: 0.3s; 
+    justify-content: space-between; 
+    height: 60px; 
+    width: 100%; 
+    z-index: 5; 
+ 
+} 
+header p{ 
+    text-align: center; 
+    padding: 15px 10px; 
+    color: aliceblue; 
+} 
+header nav{ 
+    display: flex; 
+} 
+  h1{
+    color: rgb(31, 86, 197);
+  }  
+header a{ /*caracteristicas de home-proyectos-contactos*/
+    text-decoration: none; 
+    color: aliceblue; 
+    font-size: 1em; 
+    display: flex; 
+    justify-content: space-between; 
+    margin: 10px 5px; 
+    padding: 7px 5px; 
+     
+} 
+header a:hover{ 
+    color: #E36414; 
+} 
+/*-----------------------FIN HEADER-----------------------------*/ 
+ 
+/*---------------------HOME------------------*/ 
+.home{  
+    color:#16ac91 ;
+    display: block;
+    min-height: 100vh;
+
+    background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)),
+    url(./img/fondo.png) no-repeat center center fixed;
+    background-size: cover;
+} 
+
+.home .foto{
+    position: center;
+    margin-top: 20px;
+}
+.home .descripcion{
+    text-align: center;
+    font-style: bold;
+    font-size: larger;
+    margin-top: 30px;
+  
+}
+.home .home_foto{ 
+    height: 250px; 
+    border-radius: 50%; 
+    box-shadow: 2px 2px #212122;
+}
+
+/*------------------FIN HOME-------------------*/ 
+ 
+
+/*------------------proyectos ---------------------*/
+.proyectos{
+    border: 2px solid red;
+    text-align: center;
+}
+.proyectos h2{
+    border: 2px solid green;
+    height: 100%;
+    margin: 0;
+}
+.proyectos .proyecto{
+    border: 2px solid green;
+}
+
+
+
+/*-----------------fin proyectos--------------------*/
+
+
+
+/*---------------------FOTER-----------------------------*/ 
+footer{ /*todos los derechos reservados*/
+    
+    text-align: center; 
+    font-size: 12px; 
+    display: block; 
+} 
+footer p{ /*posicion de los derechos reservados*/
+    margin-block-start: 1em; 
+    margin-block-end: 0.5em; 
+} 
+footer a{ 
+    text-decoration: none; 
+} 
+footer a:hover{ 
+    cursor: pointer; 
+} 
